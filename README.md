@@ -1,28 +1,24 @@
-## Judul Project 
-    Sistem Penilaian Sepak Bola
+## Apa saja yang perlu diinstall & Bagaimana cara istalnya
+1. face_recognition
+pip install face_recognition
+2. pyttsx3 (membuat teks bersuara)
+pip install pyttsx3
+3. datetime
 
-## Deskripsi Umumnya
-Sistem ini dirancang untuk mendeteksi bola dan garis gawang dalam permainan sepak bola. Ketika bola sepenuhnya melewati garis gawang, sistem secara otomatis menambahkan skor dan menampilkan waktu. Setelah itu sistem akan memutar rekaman ulang dengan efek slowmo untuk memastikan bahwa bola benar-benar melewati garis gawang.
+## Cara menjalankan aplikasinya
+1. Pastikan semua pustaka sudah terinstal.
+2. Sesuaikan jalur ke file database (DATABASE_PATH) dan file CSV (CSV_FILE_PATH) sesuai
+3. Jalankan script
+4. Aplikasi akan membuka video stream dari kamera dan mulai mendeteksi wajah
+5. Ketika wajah dikenali, aplikasi akan menampilkan nama dan peran orang tersebut
+6. Menyimpan waktu kehadiran dalam file CSV, dan memberikan ucapan selamat datang(ketika pukul 08:00-12:00)
+ dan selamat jalan (ketika mulai pukul 14:00)
+7. Jika wajah tidak dikenali, maka menekan tombol S untuk mendaftarkan wajah
+8. Tekan Q untuk keluar dari aplikasi
 
-## Fitur Unggulan
-1. Penilaian Otomatis
-    Secara otomatis menambahkan skor ketika melewati garis gawang 
-2. Penampilan Skor Secara Real-time
-    Skor akan ditampilkan secara langsung di layar
-
-## Metode yang digunakan
-    Proyek ini menggunakan metode color detection untuk mendeteksi objek bola
-
-## Flowchart
-
-## Pembagian Tugas
-Feature 1 : Fattan
-Feature 2 : Ilmi
-Feature 3 : Dahayu
-
-## Future Works
-1. Sistem dapat mencatat jumlah tendangan ke gawang
-2. Sistem dapat menampilkan frekuensi gol
-3. Sistem dapat mendeteksi offside secara otomatis
-
-![Flowchart](https://github.com/user-attachments/assets/346fbacf-7ddb-48e9-98e6-1b9f58d87f10)
+## Output filenya apa saja? (excel, csv,ss, dll)
+1. csv (Comma-Separated Values) untuk menyimpan data
+Nama: Nama siswa yang dikenali.
+Role: Peran atau jabatan siswa (misalnya, "Student").
+Time: Waktu kedatangan atau kepergian siswa.
+File CSV akan disimpan di lokasi yang ditentukan oleh CSV_FILE_PATH.
